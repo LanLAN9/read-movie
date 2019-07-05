@@ -1,0 +1,26 @@
+.starts-container{
+  width: 100%;
+  
+}
+
+.startandscore{
+  display: flex;
+  flex-direction: row;
+}
+
+.startandscore>text{
+  margin-top: 20rpx;
+}
+
+.startandscore>.starts{
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top:15rpx; 
+}
+
+.startandscore>.starts>image{
+  width: 25rpx;
+  height: 25rpx;
+}
+

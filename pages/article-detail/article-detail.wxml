@@ -1,0 +1,33 @@
+<!--pages/article-detail/article-detail.wxml-->
+<view class='articlecontainer'>
+  <view class='headpic'>
+    <image src='{{isPlay?eacharticle.coverImgUrl:eacharticle.post_third_illustration}}'></image>
+  </view>
+  <image src="{{isPlay?'img/aduio.svg':'img/music.svg'}}" bindtap='onaudio' class='audio'>
+  </image>
+  <!-- <image src='img/music.svg' bindtap='onaudio' wx:else class='audio' > -->
+
+  <!-- </image> -->
+  <view class='avir'>
+    <image src='{{eacharticle.post_first_avatar}}'></image>
+    <text>{{eacharticle.avatar_name}}</text>
+    <view>
+      <text>发表于</text>
+      <text>{{eacharticle.article_time}}</text>
+    </view>
+  </view>
+  <view class='articledetail'>
+    <view class='articletitle'>{{eacharticle.post_second_title}}</view>
+    <view class='line'>
+    </view>
+    <view class='likeornot'>
+      <image src='img/collection02.svg' class='img1' bindtap='collectionTap' wx:if="{{collection}}"></image>
+      <image src='img/collection01.svg' class='img1' bindtap='collectionTap' wx:else></image>
+      <image src='img/icon2.svg' class='img2' bindtap='shareTap'></image>
+    </view>
+    <view class='article'>
+      {{eacharticle.article_detail}}
+    </view>
+  </view>
+
+</view>

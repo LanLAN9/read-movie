@@ -1,0 +1,15 @@
+/* pages/more-movie/more-movie.wxss */
+@import '../more-movie-grid/more-movie-template.wxss';
+.moviesearch{
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.moviesearch>input{
+  width: 90%;
+  height: 50rpx;
+  background-color: #F0F0F0;
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  border-radius: 25rpx;
+  padding-left:1rem; 
+  font-size: 26rpx;
+}

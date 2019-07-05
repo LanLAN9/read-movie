@@ -1,0 +1,21 @@
+@import "movie-item-template.wxss";
+.eachmovie-template{
+  display: flex;
+  flex-direction: column;
+}
+
+.eachmovie-template{
+  width: 40%;
+}
+
+.moviepic-template{
+  width: 200rpx;
+  height: 300rpx;
+  /* display: block; */
+  font-size: 24rpx;
+}
+
+.moviename-template{
+  color: gray;
+  font-size: 35rpx;
+}

@@ -1,0 +1,40 @@
+@import "movie-list-template.wxss";
+.movie-container{
+  background-color: rgb(246, 248, 248);
+  
+}
+
+.moviebox{
+  margin: 20rpx 0 20rpx 20rpx;
+  background-color: #fff;
+}
+
+.moviehead{
+  margin: 0 0 20rpx 0;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+
+.moviehead>.headtitle{
+  font-size: 35rpx;
+  color: gray;
+
+}
+
+.moviehead image{
+  width: 35rpx;
+  height: 35rpx;
+}
+
+
+.moviehead .more{
+  color: #00BFFF;
+  margin-left: 450rpx;
+  font-size: 35rpx;
+}
+
+.eachmovie{
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,25 @@
+<template name="postItem">
+<view class='post'>
+      <view class='post-first'>
+        <image wx:if="{{img_condiction}}" class='post-first-avatar' src='{{post_first_avatar}}'></image>
+        <text class='post-first-text'>{{post_first_text}}{{index+1}}</text>
+      </view>
+      <view class='post-second'>
+        <text class='post-second-title'>{{post_second_title}}</text>
+      </view>
+      <view class='post-third'>
+        <image class='post-third-illustration' src='{{post_third_illustration}}'></image>
+      </view>
+      <view class='post-fourth'>
+        {{post_fourth}}
+      </view>
+      <view class='post-fifth'>
+        <image class='icon-collection post-icon' src='../imgs/icon1.svg'></image>
+        <view class='collection post-num'>{{collection}}</view>
+        <image class='icon-like post-icon' src='../imgs/icon3.svg'></image>
+        <view class='like post-num'>{{like}}</view>
+      </view>
+    </view>
+
+
+</template>

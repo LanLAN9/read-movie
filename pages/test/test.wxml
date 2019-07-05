@@ -1,0 +1,27 @@
+<import src="post-item/post-item-template.wxml" />
+
+<view class='content'>
+  <!-- <view class='lunbotu'> -->
+    <swiper class='lunbobox' circular="true" indicator-dots="true" autoplay="true" indicator-color='gray' indicator-active-color='#fff' current='1' interval='3000'>
+      <swiper-item>
+        <image src='{{article[1].post_third_illustration}}'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='{{article[2].post_third_illustration}}'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='{{article[3].post_third_illustration}}'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='{{article[4].post_third_illustration}}'></image>
+      </swiper-item>
+    </swiper>
+
+  <!-- </view> -->
+  <block wx:for="{{article}}" wx:for-item="item" wx:for-index="index">
+    <!-- template -->
+    <view  bindtap='viewMore' data-postID='{{item.postId}}' data-musicurl='{{item.musicurl}}' data-musicname='{{item.musicname}}'>
+      <template is="postItem" data="{{...item}}"/>
+    </view>
+  </block>
+</view>

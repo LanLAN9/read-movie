@@ -1,0 +1,8 @@
+<import src='../movie-item/movie-list-template.wxml'/>
+<template name="moreMovie">
+  <view class='eachmovie'>
+      <block wx:for="{{item.movies}}" wx:for-item="eachmovie">
+        <template is="movieListTemplate" data="{{...eachmovie}}"/>
+      </block>
+    </view>
+</template>

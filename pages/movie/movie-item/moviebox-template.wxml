@@ -1,0 +1,19 @@
+<import src="movie-list-template.wxml" />
+<template name="movieboxTemplate">
+<view class='movie-container'>
+  <view  class='moviebox'>
+    <view class='moviehead'>
+          <text class='headtitle'>{{title}}</text>
+          <text class='more' bindtap='onmoreMove' data-movieboxid="{{movieboxid}}" data-movietitle="{{title}}">更多</text>
+          <image src='img/arrow.png'></image>    
+    </view>
+    <view class='eachmovie'>
+      <block wx:for="{{movies}}" wx:for-item="eachmovie">
+        <template is="movieListTemplate" data="{{...eachmovie}}"/>
+      </block>
+    </view>
+  </view>
+
+</view>
+
+</template>

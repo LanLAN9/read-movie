@@ -1,0 +1,6 @@
+<!--pages/map/map.wxml-->
+<map class='map' enable-overlooking='true'longitude="114.93" latitude="25.83" ></map>
+<video src='https://635-3.vod.tv.itc.cn/sohu/v1/TmvdTmPGqAIFNSc1MKXDy4vDgek7RKeNbOeW0K4L5m47fFoGRM1O0r.mp4?k=1bIyM5&p=j9lvzSw3qSvdqSPCqpP7qpPUqmrdoSo7hRYRzSPWXZxIWhoGgY220Go70ScAZMx4gf&r=TUldziJCtpCmhWB3tSCGhWlvsmCUomkWtWaizY&q=OpCmhW7IWhodRD6OvmfCyY2OfhdHfGbHfJvs5G6sfJo2ZDvtfY14fObXwm4cWhbtr&cip=218.64.220.102' class='video' title='TFBOYS《是你》' loop='true' autoplay='{{isornot}}'></video>
+<view class='otheraudio' bindtap='otheraudio'>
+  其它多媒体组件
+</view>
