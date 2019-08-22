@@ -1,11 +1,10 @@
 <import src="movie-item-template.wxml" />
 <template name="movieListTemplate">
   <view class='eachmovie-template'>
-    <image src='{{bigimg}}' class='moviepic-template'></image>
-    <text class='moviename-template'>{{name}}</text>
-    <template is="movieTemplate" data="{{score}}"/>
+    <image src='{{eachmovie.images.small}}' class='moviepic-template'></image>
+    <text class='moviename-template'>{{eachmovie.title}}</text>
+    <template is="movieTemplate" data='{{eachmovie}}'/>
   </view>   
-  
 
 </template>
  

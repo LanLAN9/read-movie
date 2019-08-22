@@ -1,5 +1,5 @@
 /* pages/more-movie/more-movie.wxss */
-@import '../more-movie-grid/more-movie-template.wxss';
+@import "../movie-item/movie-list-template.wxss";
 .moviesearch{
   border-bottom: 1px solid #F0F0F0;
 }
@@ -12,4 +12,8 @@
   border-radius: 25rpx;
   padding-left:1rem; 
   font-size: 26rpx;
+}
+.eachmovie{
+  float: left;
+  overflow: hidden;
 }

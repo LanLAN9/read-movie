@@ -1,8 +1,10 @@
 <!--pages/more-movie/more-movie.wxml-->
-<import src='../more-movie-grid/more-movie-template.wxml'/>
+<import src='../movie-item/movie-list-template.wxml' />
 <view class='moviesearch'>
   <input auto-focus='{{false}}' placeholder='请输入' bindconfirm='onbindcofirm'></input>
 </view>
-<block wx:for="{{movieData}}" wx:for-item="item">
-  <template is="moreMovie" data="{{item}}"/>
+<block wx:for="{{lotsmovie}}" wx:for-item="eachmovie">
+  <view class='eachmovie'>
+    <template is="movieListTemplate" data="{{eachmovie}}" />
+  </view>
 </block>
