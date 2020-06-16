@@ -9,7 +9,7 @@
 
 2.文章推送链接文章阅读
 
-![](.\demotest\demo-img\readpart.png)
+![](demotest\demo-img\readpart.png)
 
 ###### 文章阅读详细界面
 
